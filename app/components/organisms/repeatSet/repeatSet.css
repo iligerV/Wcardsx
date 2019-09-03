@@ -1,0 +1,9 @@
+:global body {
+    /* margin: 0; */
+
+    /* background: var(--color-gray-dark); */
+}
+
+.wrapper {
+    padding: 20px 10px;
+}

@@ -1,0 +1,158 @@
+@import '../../../../src/styles/vars.css';
+
+$drawerWidth: 240px;
+$persistentDrawerBg: #fafafa;
+
+:global body {
+    margin: 0;
+    background: $persistentDrawerBg;
+}
+
+.wrapper {
+    position: relative;
+    flex-grow: 1;
+
+    .appFrame {
+        position: relative;
+        display: flex;
+        z-index: 1;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .appBar {
+        position: absolute;
+        transition: var(--animation-in);
+    }
+
+    .appBarDrawerOpen {
+        transform: translate($drawerWidth);
+        transition: var(--animation-in);
+
+        @media (--tablet) {
+            width: calc(100% - $drawerWidth);
+            transform: translate(0);
+        }
+    }
+
+    .content {
+        position: relative;
+        top: 64px;
+        flex-grow: 1;
+        padding-top: 0;
+        overflow-y: auto;
+        background-color: $persistentDrawerBg;
+        transition: var(--animation-out);
+    }
+
+    .contentLeft {
+        transform: translateX(0);
+        margin-left: -$drawerWidth;
+    }
+
+    .contentRight {
+        transform: translateX(0);
+        margin-right: -$drawerWidth;
+    }
+
+    .contentShift {
+        transition: var(--animation-in);
+    }
+
+    .contentShiftLeft {
+        transform: translateX(0);
+        margin-left: 0;
+
+        @media (--tablet) {
+            margin-left: -$drawerWidth;
+            transform: translateX($drawerWidth);
+        }
+    }
+
+    .contentShiftRight {
+        transform: translateX(0);
+        margin-right: 0;
+
+        @media (--tablet) {
+            margin-right: $drawerWidth;
+            transform: translateX($drawerWidth);
+        }
+    }
+
+    .menuButton {
+        margin-right: 20px;
+        margin-left: 12px;
+    }
+
+    .logoutButton {
+        margin-right: 5px;
+        margin-left: auto;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .logoutButton:hover {
+        background-color: #1976d2;
+    }
+
+    .logoutButtonSvgIcon {
+        margin-right: 5px;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .drawerPaper {
+        position: relative;
+        width: $drawerWidth;
+    }
+
+    .drawerHeader {
+        display: flex;
+        z-index: 1;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 8px;
+        min-height: 55px;
+
+        @media (--tablet) {
+            min-height: 63px;
+        }
+    }
+
+    .title {
+        max-height: 40px;
+        overflow: hidden;
+        font-size: 1.0125rem;
+
+        @media (--large-smartphone) {
+            font-size: 1.5rem;
+        }
+    }
+
+    .titleContainer {
+        padding-right: 0;
+    }
+
+    .titleIcon {
+        position: absolute;
+        top: 3px;
+        left: 48%;
+        width: 48px;
+        height: 48px;
+        opacity: .15;
+
+        @media (--tablet) {
+            top: 7px;
+        }
+    }
+}
+
+.titleComment {
+    /* vtodo: отцентрировать по вертикали https://i.imgur.com/GxC6kUA.png */
+    font-size: 13px;
+    font-style: italic;
+    vertical-align: middle;
+}

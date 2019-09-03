@@ -1,0 +1,16 @@
+variables:
+  CACHE_ID: 'nm06'
+
+
+.deploy_by_dev_tag:
+  only:
+    - /^dev-/
+    - web
+  except:
+    - branches
+
+.cache-common:
+  cache:
+      key: $CACHE_ID
+      paths:
+        - node_modules/

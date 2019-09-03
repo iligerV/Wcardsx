@@ -1,0 +1,18 @@
+@import '../../../../../src/styles/vars.css';
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 0 40px;
+
+    @media (--large-smartphone) {
+        justify-content: center;
+    }
+}
+
+.counter {
+    position: absolute;
+    top: 22px;
+    right: 15px;
+}

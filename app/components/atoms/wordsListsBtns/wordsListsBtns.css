@@ -1,0 +1,20 @@
+@import '../../../../src/styles/vars.css';
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+
+    .btn {
+        margin: 0 7px;
+    }
+}
+
+.wordsRight > span {
+    background-color: var(--words-right);
+    color: white;
+}
+
+.wordsWrong > span {
+    background-color: var(--words-wrong);
+    color: white;
+}

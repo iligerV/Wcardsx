@@ -1,0 +1,63 @@
+@import '../../../../src/styles/vars.css';
+
+$drawerWidth: 240px;
+$persistentDrawerBg: #fafafa;
+
+:global body {
+    margin: 0;
+    background: $persistentDrawerBg;
+}
+
+.pageSet {
+    position: relative;
+    flex-grow: 1;
+    padding: 0 5px;
+
+    @media (--tablet) {
+        margin: 5px auto 0;
+        padding: 0 20px;
+        max-width: 900px;
+    }
+
+    .content {
+        padding-top: 15px;
+    }
+}
+
+.upperRow {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    background-color: $persistentDrawerBg;
+
+    .loader {
+        margin-left: 10px;
+    }
+
+    .counter {
+        margin-left: 10px;
+
+        @media (--large-smartphone) {
+            margin-left: 20px;
+        }
+    }
+}
+
+.btnLoadWrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.wordsLine {
+    display: flex;
+}
+
+.externalIcon {
+    padding: 0 15px 0 5px;
+    color: var(--color-gray);
+}
+
+.listLoader {
+    margin-top: 25px;
+}

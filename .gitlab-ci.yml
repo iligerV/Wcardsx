@@ -1,0 +1,11 @@
+include:
+  - '/.gitlab-ci/tmpls.yml'
+  - '/.gitlab-ci/build.yml'
+  - '/.gitlab-ci/deploy_dev.yml'
+
+stages:
+  - build
+  - deploy:dev
+
+variables:
+  PATH_ASSETS_PROD: 'public/assets/prod'

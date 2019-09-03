@@ -1,0 +1,22 @@
+.loginPage {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #4db8d2;
+    color: #fff;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.text {
+    padding: 24px;
+}
+
+.image {
+    max-width: 50%;
+}

@@ -1,0 +1,46 @@
+.loaderWrapper {
+    padding-left: 24px;
+}
+
+.cardLoaderWrapper {
+    padding: 10px 11px;
+}
+
+ul.list {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+div.listItem {
+    padding: 14px 24px;
+    min-width: 400px;
+
+    @media (--large-smartphone) {
+        width: 500px;
+    }
+}
+
+div.subListItem {
+    padding: 0;
+    padding-right: 12px;
+    cursor: default;
+    min-width: 400px;
+    max-width: 450px;
+
+    @media (--large-smartphone) {
+        min-width: 500px;
+    }
+}
+
+.subListItemButton {
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    cursor: pointer;
+}
+
+.link {
+    display: flex;
+    padding: 12px 24px;
+}

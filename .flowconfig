@@ -1,0 +1,23 @@
+[ignore]
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+module.name_mapper='^App' ->'<PROJECT_ROOT>/app'
+module.name_mapper='^Actions' ->'<PROJECT_ROOT>/app/actions'
+module.name_mapper='^Api' ->'<PROJECT_ROOT>/app/api'
+module.name_mapper='^Components' ->'<PROJECT_ROOT>/app/components'
+module.name_mapper='^Containers' ->'<PROJECT_ROOT>/app/containers'
+module.name_mapper='^Constants' ->'<PROJECT_ROOT>/react/'
+module.name_mapper='^Constants' ->'<PROJECT_ROOT>/app/constants'
+module.name_mapper='^Core' ->'<PROJECT_ROOT>/app/core'
+module.name_mapper='^Types' ->'<PROJECT_ROOT>/app/flowTypes'
+module.name_mapper='^Src' ->'<PROJECT_ROOT>/src'
+module.name_mapper='^Stores' ->'<PROJECT_ROOT>/app/stores'
+module.name_mapper='^Utils' ->'<PROJECT_ROOT>/app/core/utils'
+
+[strict]

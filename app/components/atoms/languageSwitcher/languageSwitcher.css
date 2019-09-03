@@ -1,0 +1,11 @@
+@import '../../../../src/styles/vars.css';
+
+.lang {
+    color: var(--color-gray-light);
+    text-transform: capitalize;
+}
+
+.langBold {
+    color: var(--color-default-font);
+    font-weight: bold;
+}

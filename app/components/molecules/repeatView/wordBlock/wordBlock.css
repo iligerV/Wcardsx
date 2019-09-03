@@ -1,0 +1,49 @@
+@import '../../../../../src/styles/vars.css';
+
+.wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 0 40px;
+
+    @media (--not-mobile) {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .revertButton {
+        font-size: 16px;
+    }
+}
+
+.col1 {
+    position: static;
+    width: 140px;
+
+    @media (--not-mobile) {
+        position: absolute;
+    }
+}
+
+.col2n3 {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    @media (--not-mobile) {
+        justify-content: space-around;
+    }
+}
+
+.col2_2 {
+    position: static;
+    right: 15px;
+
+    @media (--not-mobile) {
+        position: absolute;
+    }
+}

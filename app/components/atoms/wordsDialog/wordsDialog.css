@@ -1,0 +1,50 @@
+@import '../../../../src/styles/vars.css';
+
+$wordHeight: 36px;
+
+.wrapper {
+    .revertButton {
+        position: absolute;
+        margin: -3px 0 0 -50px;
+        padding: 0;
+        width: 24px;
+        height: 24px;
+        color: color(lightgray a(50%));
+
+        &:hover {
+            color: var(--color-default-font);
+        }
+    }
+
+    .closeButton {
+        opacity: inherit;
+        margin: 8px;
+
+        @media (--large-smartphone) {
+            display: none;
+        }
+    }
+
+    .dialogTitle {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.li {
+    position: relative;
+    min-height: $wordHeight;
+}
+
+.gotoLink {
+    color: var(--link);
+
+    &:hover {
+        color: var(--link-hover);
+    }
+}
+
+.currLink {
+    color: var(--color-green-dark);
+    cursor: default;
+}

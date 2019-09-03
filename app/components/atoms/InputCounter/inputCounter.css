@@ -1,0 +1,17 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .input {
+        margin: 8px 0;
+
+        input {
+            text-align: center;
+        }
+    }
+}
+
+.width50 {
+    min-width: 50px !important;
+    width: 50px !important;
+}

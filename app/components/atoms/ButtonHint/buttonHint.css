@@ -1,0 +1,11 @@
+.wrapper {
+    margin-right: 7px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.iconRight {
+    margin-left: 10px;
+}

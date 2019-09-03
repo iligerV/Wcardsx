@@ -1,0 +1,17 @@
+build:
+  stage: build
+  extends:
+    - .deploy_by_dev_tag
+    - .cache-common
+  image: node:10
+  script:
+    - yarn
+    - yarn run deploy:dev-man
+    - ls $PATH_ASSETS_PROD
+    - find $PATH_ASSETS_PROD -type d
+  when: manual
+  allow_failure: false
+  artifacts:
+    name: "$CI_JOB_NAME-$CI_COMMIT_REF_NAME"
+    paths:
+      - $PATH_ASSETS_PROD

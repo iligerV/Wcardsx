@@ -1,0 +1,14 @@
+deploy:dev:
+  stage: deploy:dev
+  extends:
+    - .deploy_by_dev_tag
+    - .cache-common
+  image: node:10
+  when: on_success
+  script:
+    - echo "$DIVIDER"
+    - yarn global add netlify-cli
+    - find $PATH_ASSETS_PROD -type d
+    - netlify deploy --dir=$PATH_ASSETS_PROD --site="$DEV_SITE_ID2" --message="ref:$CI_COMMIT_REF_NAME pipeline:$CI_PIPELINE_ID " --auth="$PERSONAL_ACCESS_TOKEN" --json --prod
+  dependencies:
+    - build

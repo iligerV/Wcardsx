@@ -1,0 +1,32 @@
+@import './transition-vars.css';
+
+/* Actual */
+@custom-media --large-smartphone (min-width: 420px);
+@custom-media --tablet (min-width: 600px);
+
+/* @deprecated */
+@custom-media --not-mobile (min-width: 768px);
+@custom-media --mobile (max-width: 767px);
+@custom-media --min-mobile (max-width: 550px);
+
+:root {
+    --color-default-font: rgba(0, 0, 0, .87);
+    --color-gray-light: lightgray;
+    --color-gray: gray;
+    --color-gray-dark: #626262;
+    --color-red: red;
+    --color-gray-hover: #dedede;
+    --color-green-dark: #077003;
+    --color-card-actions: rgba(77, 184, 210, .5);
+    --color-card-actions-hover: rgba(77, 184, 210, 1);
+    --action-trans: rgba(7, 160, 23, .5);
+    --action-trans-hover: #07a017;
+    --link: rgb(0, 84, 185);
+    --link-hover: rgb(46, 66, 92);
+    --words-right: #43a047;
+    --words-wrong: #f44336;
+
+    /* --nested-variable: color(var(--color-danger) a(90%)); для такого нужен плагин */
+
+    /* --tablets: (min-width: 600px); */
+}
