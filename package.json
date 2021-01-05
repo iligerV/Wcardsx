@@ -21,7 +21,7 @@
     "@tinkoff/utils": "^1.0.1",
     "app-root-path": "^2.2.1",
     "autoprefixer": "^8.3.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "babel-eslint": "~8.2.5",
     "classnames": "~2.2.6",
     "eslint-html-reporter": "~0.5.2",
